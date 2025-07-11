@@ -13,7 +13,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
-	"github.com/unpoller/unifi/v5"
+	unifi "github.com/unpoller/unifi/v5"
 
 	"github.com/cldmnky/home-lab-exporter/pkg/collector"
 )

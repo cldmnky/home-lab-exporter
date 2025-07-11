@@ -7,7 +7,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/testutil"
 	"github.com/stretchr/testify/assert"
-	"github.com/unpoller/unifi/v5"
+	unifi "github.com/unpoller/unifi/v5"
 )
 
 type mockClient struct {
