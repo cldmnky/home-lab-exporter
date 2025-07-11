@@ -117,12 +117,10 @@ func (c *ThermalCollector) fetch() {
 		log.Printf("Error fetching chassis: %v", err)
 		return
 	}
-	log.Println("--------- Chassis count:", len(chass), "---------")
 	for _, ch := range chass {
 		if therm, err := ch.Thermal(); err != nil || therm == nil {
 			continue
 		}
-		log.Printf("Chassis: %s, Description: %s", ch.Name, ch.Description)
 		therm, err := ch.Thermal()
 		if err != nil {
 			log.Printf("Error fetching thermal data for chassis %s: %v", ch.Name, err)
